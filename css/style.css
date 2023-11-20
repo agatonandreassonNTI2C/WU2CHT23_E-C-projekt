@@ -1,0 +1,43 @@
+#butik {
+    display: grid;
+    grid-template-rows: 200px 1fr;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 
+    "art nav"
+    "kat but"
+    ;
+}   
+
+#start{
+    display: grid;
+    grid-template-rows: 200px 1fr 1fr 100px;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 
+    "art nav"
+    "mai mai"
+    "för för"
+    "cop cop"
+    ;
+}
+
+#utsällningar {
+    display: grid;
+    grid-template-rows: 200px 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "art nav"
+    "hea hea"
+    "uts uts"
+    ;
+}
+
+#art{
+    grid-area: art;
+    background: pink;
+}
+
+nav {
+    grid-area: nav;
+    background: palevioletred;
+
+}
