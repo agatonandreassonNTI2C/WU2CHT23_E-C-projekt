@@ -22,6 +22,38 @@
     "men se4 se5 se6"
     "men im7 im8 im9"
     "men se7 se8 se9"
+    "end end end end"
+    ;
+
+}
+
+#div2{
+    background: hsl(340, 100%, 63%);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 38.5px 400px 300px 25px;
+    grid-template-areas: 
+    "hea nav nav nav"
+    "se1 se2 se2 bil"
+    "se3 se3 se3 se3"
+    "end end end end"
+    ;
+
+}
+
+
+#div3{
+    background: hsl(340, 100%, 63%);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px 150px 150px minmax(100, 1fr);
+    grid-template-areas: 
+    "hea nav nav nav"
+    "bi1 bi2 bi3 bi4"
+    "se1 se2 se3 se4"
+    "bi5 bi6 bi7 bi8"
+    "se5 se6 se7 se8"
+    "end end end end"
     ;
 
 }
@@ -54,10 +86,11 @@ header{
 
 nav{
     grid-area: nav;
-    background: rgb(192, 22, 175);
+    /*background: rgb(192, 22, 175);*/
+    background: rgb(89, 16, 179);
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;    
 }
 
 
@@ -125,6 +158,41 @@ img{
 }
 
 
+#sbild1{
+    grid-area: bi1;
+}
+
+#ubild1{
+    grid-area: bi1;
+}
+
+#ubild2{
+    grid-area: bi2;
+}
+
+#ubild3{
+    grid-area: bi3;
+}
+
+#ubild4{
+    grid-area: bi4;
+}
+
+#ubild5{
+    grid-area: bi5;
+}
+
+#ubild6{
+    grid-area: bi6;
+}
+
+#ubild7{
+    grid-area: bi7;
+}
+
+#ubild8{
+    grid-area: bi8;
+}
 
 #section_1{
     grid-area: se1;
@@ -171,6 +239,75 @@ img{
     padding: 10px;
 }
 
+
+#ssection_1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    grid-area: se1;
+    padding: 10px;
+}
+
+#ssection_2{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    grid-area: se2;
+    padding: 10px;
+}
+
+#ssection_3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    grid-area: se3;
+    padding: 10px;
+}
+
+
+#usection_1{
+    grid-area: se1;
+    padding: 10px;
+}
+
+#usection_2{
+    grid-area: se2;
+    padding: 10px;
+}
+
+#usection_3{
+    grid-area: se3;
+    padding: 10px;
+}
+
+#usection_4{
+    grid-area: se4;
+    padding: 10px;
+}
+
+#usection_5{
+    grid-area: se5;
+    padding: 10px;
+}
+
+#usection_6{
+    grid-area: se6;
+    padding: 10px;
+}
+
+#usection_7{
+    grid-area: se7;
+    padding: 10px;
+}
+
+#usection_8{
+    grid-area: se8;
+    padding: 10px;
+}
+
+
 #skapa{
     background: rgb(137, 188, 235);
     color: rgb(25, 77, 187);
@@ -180,8 +317,12 @@ h1 {
     color: rgb(6, 6, 6);
 
     font-size: 2.56rem;
+}
 
+h4 {
+    color: rgb(6, 6, 6);
 
+    font-size: 2rem;
 }
 
 p {
@@ -192,13 +333,10 @@ p {
     display: flex;
 }
 
-
 footer{
-    grid-area: foo;
-    background: maroon;
-
+    grid-area: end;
+    background: rgb(255, 255, 255);
 }
-
 
 
 a {
