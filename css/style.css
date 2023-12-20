@@ -13,7 +13,7 @@
     background: hsl(340, 100%, 63%);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 100px 100px 150px 150px minmax(100, 1fr);
+    grid-template-rows: 50px 200px 100px 200px 100px 200px 100px 25px;
     grid-template-areas: 
     "hea nav nav nav"
     "men im1 im2 im3"
@@ -31,7 +31,7 @@
     background: hsl(340, 100%, 63%);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 38.5px 400px 300px 25px;
+    grid-template-rows: 50px 300px 200px 25px;
     grid-template-areas: 
     "hea nav nav nav"
     "se1 se2 se2 bil"
@@ -46,7 +46,7 @@
     background: hsl(340, 100%, 63%);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 100px 100px 150px 150px minmax(100, 1fr);
+    grid-template-rows: 50px 200px 150px 200px 150px 25px;
     grid-template-areas: 
     "hea nav nav nav"
     "bi1 bi2 bi3 bi4"
@@ -160,6 +160,7 @@ img{
 
 #sbild1{
     grid-area: bi1;
+
 }
 
 #ubild1{
@@ -247,14 +248,17 @@ img{
     justify-content: space-evenly;
     grid-area: se1;
     padding: 10px;
+    background: hsl(311, 81%, 51%);
+
 }
 
 #ssection_2{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    grid-area: se2;
+    grid-area: se2;   
     padding: 10px;
+    background: hsl(311, 81%, 51%);
 }
 
 #ssection_3{
